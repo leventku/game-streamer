@@ -12,7 +12,7 @@ export const StreamVideo = ({
     streamLink,
 }: Props) => <>
     <img src={streamLink} alt={name}/>
-    <p>{streamer}</p>
-    <p>{name}</p>
-    <p>{game}</p>
+    <p className="streamer">{streamer}</p>
+    <h4>{name}</h4>
+    <p className="game">{game}</p>
 </>

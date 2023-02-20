@@ -1,0 +1,100 @@
+.stream-detail {
+    display: flex;
+    margin-top: var(--spacer-medium);
+}
+
+.stream-video {
+    display: flex;
+    flex-direction: column;
+    
+    margin-right: var(--spacer-medium);
+    transition-property: width;
+    transition-timing-function: ease;
+    transition-duration: var(--timing-short);
+}
+
+.stream-video.wide {
+    width: 97%;
+}
+.stream-video.narrow {
+    width: 70%;
+}
+
+.stream-video .streamer {
+    font-weight: 600;
+}
+.stream-video .game {
+    font-size: var(--font-small);
+}
+
+.stream-side {
+    transition-property: width;
+    transition-timing-function: ease;
+    transition-duration: var(--timing-short);
+}
+
+.stream-side h3 {
+    text-align: center;
+}
+
+.stream-side.open {
+    width: 30%;
+    min-width: 300px;
+    background: var(--background-850);
+    padding: var(--spacer-medium);
+    box-sizing: border-box;
+}
+.stream-side.close {
+    width: 3%;
+}
+
+.chat-toggle-btn {
+    stroke: var(--primary-300);
+    cursor: pointer;
+}
+
+.donation-form input{
+    width: var(--spacer-xxlarge);
+}
+.donation-form .amount-input-field *{
+    margin-right: var(--spacer-small);
+}
+
+.chat-messages-container {
+    height: 50vh;
+    overflow: auto;
+}
+
+.chat-message-item {
+    font-size: var(--font-small);
+}
+
+.chat-message-item:nth-child(2n+1) {
+    background: var(--background-800);
+}
+
+.chat-message-item .user-name{
+    font-weight: 600;
+}
+
+.new-message-form {
+    display: flex;
+    position: relative;
+}
+.send-message-input {
+    flex: 2;
+    margin-right: var(--spacer-small);
+}
+
+.emoji-btn {
+    position: absolute;
+    right: 5rem;
+    top: 0.4rem;
+    font-size: var(--font-xlarge);
+    cursor: pointer;
+}
+
+.emoji-picker {
+    position: absolute;
+    bottom: 3rem;
+}

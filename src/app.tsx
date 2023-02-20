@@ -13,6 +13,14 @@ const App = () => {
         <div className="app">
             <div className="app-row">
                 <div className="top-bar">
+                    {view.type === 'detail' 
+                        ? <button
+                        className="back-btn"
+                        onClick={() => {setView({type: 'catalog'})}}
+                        >Back
+                        </button>
+                        : null
+                    }
                     <h1>Game streamer</h1>
                 </div>
             </div>
@@ -21,7 +29,6 @@ const App = () => {
                 {view.type === 'catalog'
                     ? <CatalogScreen onSetView={onSetView} />
                     : <StreamDetailScreen
-                            onSetView={onSetView}
                             id={view.id} 
                             name={view.name} 
                             streamer={view.streamer} 

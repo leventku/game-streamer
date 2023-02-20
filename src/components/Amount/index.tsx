@@ -10,5 +10,5 @@ export const Amount = ({ value, currency: currency }: Props) => {
         currencyDisplay: 'narrowSymbol',
     }).format(value)
 
-    return <div className="amount">{formattedMoney}</div>
+    return <span className="amount">{formattedMoney}</span>
 }

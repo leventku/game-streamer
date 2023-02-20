@@ -16,3 +16,9 @@
   height: 1px;
   border-bottom: 1px solid var(--background-800);
 }
+
+.back-btn {
+  position: absolute;
+  left: 5vw;
+  top: var(--spacer-medium);
+}
