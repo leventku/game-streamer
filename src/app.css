@@ -1,0 +1,18 @@
+.app-row {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: auto;
+}
+
+.top-bar {
+  display: flex;
+  height: 70px;
+  justify-content: center;
+}
+
+.divider {
+  display: block;
+  height: 1px;
+  border-bottom: 1px solid var(--background-800);
+}
