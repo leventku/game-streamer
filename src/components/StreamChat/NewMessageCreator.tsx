@@ -11,7 +11,13 @@ export const NewMessageCreator = ({ onNewChatMessageCreate }: Props) => {
 
     return <>
         <form className="new-message-form">
-            <input className="send-message-input" type='text' value={content} onChange={(e) => { setContent(e.target.value) }} />
+            <input
+                placeholder="Your message"
+                className="send-message-input"
+                type='text'
+                value={content}
+                onChange={(e) => { setContent(e.target.value) }}
+            />
             <button
                 disabled={content.length < 1}
                 onClick={() => {

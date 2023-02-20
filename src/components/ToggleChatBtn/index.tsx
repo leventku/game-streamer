@@ -6,6 +6,7 @@ type Props = {
 export const ToggleChatBtn = ({onClick, directionRight}: Props) => {
     return directionRight 
         ? <svg 
+            aria-label='Hide chat'
             onClick={onClick}
             className="chat-toggle-btn"
             height="2rem"
@@ -15,6 +16,7 @@ export const ToggleChatBtn = ({onClick, directionRight}: Props) => {
         </svg>
 
         : <svg
+            aria-label='Show chat'
             onClick={onClick}
             className="chat-toggle-btn"
             width="2rem"

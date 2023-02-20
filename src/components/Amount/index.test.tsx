@@ -6,11 +6,11 @@ test("should render as expected", () => {
 
   expect(asFragment()).toMatchInlineSnapshot(`
 <DocumentFragment>
-  <div
+  <span
     class="amount"
   >
     £510.55
-  </div>
+  </span>
 </DocumentFragment>
 `);
 });

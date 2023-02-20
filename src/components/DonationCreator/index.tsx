@@ -14,6 +14,7 @@ export const DonationCreator = ({ id }: Props) => {
         <span>Total donation:</span> <Amount value={state.savedValue} currency='USD'></Amount>
         <div className="amount-input-field">
             <input
+                placeholder="Enter amount"
                 type='number'
                 value={Number(state.currentValue).toString()}
                 onChange={(e) => { setState({ ...state, currentValue: Number(e.target.value) }) }} />
@@ -26,5 +27,4 @@ export const DonationCreator = ({ id }: Props) => {
             </button>
         </div>
     </form>
-
 }
