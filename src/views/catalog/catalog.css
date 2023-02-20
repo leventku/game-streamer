@@ -1,0 +1,39 @@
+.catalog-row {
+  display: flex;
+  overflow-x: auto;
+}
+
+.catalog-item {
+  margin-right: var(--spacer-large);
+  cursor: pointer;
+  width: 350px;
+  margin-top: var(--spacer-small);
+}
+
+.catalog-item:nth-last-child() {
+  margin-right: 0;
+}
+
+.catalog-item-image {
+  width: inherit;
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease;
+  transition-duration: var(--timing-short);
+}
+
+.catalog-item-image:focus-within, 
+.catalog-item-image:hover {
+  transform: translate3d(var(--spacer-small), calc(-1 * var(--spacer-small)), 0px);
+  box-shadow: calc(-1 * var(--spacer-small)) var(--spacer-small) rebeccapurple;
+}
+
+.catalog-item-name {
+  width: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.catalog-item-streamer-name {
+  font-size: var(--font-small);
+}

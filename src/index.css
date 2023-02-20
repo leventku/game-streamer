@@ -12,6 +12,8 @@
   --spacer-xlarge: 2rem;
   --spacer-xxlarge: 3rem;
 
+  --timing-short: 100ms;
+
   --font-small: 14px;
   --font-medium: 16px;
   --font-large: 22px;
@@ -42,6 +44,7 @@ a:hover {
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1 {
